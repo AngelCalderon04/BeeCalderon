@@ -38,6 +38,61 @@
         <li>Volver al inicio: <a href="index.html">Ir a la portada</a></li>
       </ul>
     </section>
+
+
+
+    <!-- Formulario de contacto  -->
+    <section id="formulario-solicitud">
+      <h2>Envíanos tu solicitud</h2>
+      <p>Completa tus datos y marca lo que necesitas:</p>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Datos personales</legend>
+          <p>
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+          </p>
+          <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required>
+          </p>
+          <p>
+            <label for="telefono">Teléfono / WhatsApp:</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+          </p>
+        </fieldset>
+    
+        <fieldset>
+          <legend>Tu solicitud</legend>
+          <p>¿Qué deseas solicitar? (Puedes marcar varios):<br>
+            <input type="checkbox" id="ped-galon" name="pedido" value="galon">
+            <label for="ped-galon">Miel en galón</label><br>
+            <input type="checkbox" id="ped-medio" name="pedido" value="medio-galon">
+            <label for="ped-medio">Miel en medio galón</label><br>
+            <input type="checkbox" id="ped-botella" name="pedido" value="botella">
+            <label for="ped-botella">Miel en botella</label><br>
+            <input type="checkbox" id="ped-rescate" name="pedido" value="rescate">
+            <label for="ped-rescate">Evaluación / rescate de enjambre</label>
+          </p>
+          <p>
+            <label for="cantidad">Cantidad de unidades:</label><br>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="50" value="1">
+          </p>
+          <p>Nivel de urgencia:<br>
+            <input type="radio" id="urg-normal" name="urgencia" value="normal" checked>
+            <label for="urg-normal">Normal</label>
+            <input type="radio" id="urg-pronta" name="urgencia" value="pronta">
+            <label for="urg-pronta">Urgente</label>
+          </p>
+          <p>
+            <label for="mensaje">Mensaje o dirección:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="3" cols="30"></textarea>
+          </p>
+          <button type="submit">Enviar solicitud</button>
+        </fieldset>
+      </form>
+    </section>
     
 </body>
 </html>
